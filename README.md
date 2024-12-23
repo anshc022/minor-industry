@@ -11,6 +11,38 @@ An AI and IoT-powered traffic management solution for Indian metropolitan cities
 
 ---
 
+## 📝 Introduction
+
+### Background
+India's metropolitan cities face severe traffic congestion challenges, with average speeds dropping below 20 km/h during peak hours. Traditional traffic management systems struggle to handle the unique characteristics of Indian traffic, including:
+- Mixed vehicle types (two-wheelers, auto-rickshaws, cars)
+- Non-standardized lane discipline
+- High pedestrian density
+- Complex intersection patterns
+
+### Solution Overview
+Our Smart Traffic Monitoring System addresses these challenges through:
+- **Real-time Analysis**: Processes 30 FPS video feeds with <100ms latency
+- **AI-Driven Control**: Uses deep learning for vehicle detection and traffic optimization
+- **IoT Integration**: Network of ESP32 sensors providing real-time traffic data
+- **Emergency Response**: Dedicated protocol for emergency vehicle prioritization
+- **Mobile Integration**: User-friendly app for commuter updates
+
+### Impact Assessment
+Implementation in Chennai has demonstrated:
+- Reduced average commute times by 35%
+- Improved emergency response efficiency by 40%
+- Enhanced traffic flow in complex intersections
+- Decreased fuel consumption and emissions
+- Better user experience for daily commuters
+
+### Target Applications
+- Major city intersections
+- Highway entry/exit points
+- Commercial districts
+- Emergency response corridors
+- Public transport routes
+
 ### 📊 Key Performance Highlights
 
 - ⏱️ **35%** reduction in wait times
@@ -316,3 +348,4 @@ Avadi, Chennai 600062, Tamil Nadu, India
 [📄 License](#)
 
 </div>
+````
