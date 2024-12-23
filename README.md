@@ -2,16 +2,16 @@
 
 # 🚦 Smart Traffic Monitoring System
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com)
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/anshc022/minor-industry)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/anshc022/minor-industry/blob/main/LICENSE)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/anshc022/minor-industry)
 
 An AI and IoT-powered traffic management solution for Indian metropolitan cities
 
-[📑 Documentation](#) |
-[📱 Mobile App](#) |
-[🔧 Installation Guide](#) |
-[📄 License](#)
+[📑 Documentation](https://github.com/anshc022/minor-industry/wiki) |
+[📱 Mobile App](https://github.com/anshc022/minor-industry/releases) |
+[🔧 Installation Guide](https://github.com/anshc022/minor-industry#-deployment--development) |
+[📄 License](https://github.com/anshc022/minor-industry/blob/main/LICENSE)
 </div>
 
 ---
@@ -244,8 +244,8 @@ Docker 20.10+
 ### Quick Start
 ```bash
 # Clone repository
-git clone https://github.com/your-repo/smart-traffic
-cd smart-traffic
+git clone https://github.com/anshc022/minor-industry.git
+cd minor-industry
 
 # Setup environment
 python -m venv env
@@ -492,4 +492,3 @@ Avadi, Chennai 600062, Tamil Nadu, India
 © 2024 Smart Traffic Monitoring System - All Rights Reserved
 
 </div>
-````
