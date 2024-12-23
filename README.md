@@ -7,9 +7,27 @@
 [![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com)
 
 An AI and IoT-powered traffic management solution for Indian metropolitan cities
+
+[📑 Documentation](#) |
+[📱 Mobile App](#) |
+[🔧 Installation Guide](#) |
+[📄 License](#)
 </div>
 
 ---
+
+## 📋 Table of Contents
+- [Introduction](#-introduction)
+- [Features](#-core-features)
+- [Technology Stack](#-system-architecture)
+- [Implementation](#-logic--implementation)
+- [Performance](#-processing-capabilities)
+- [Deployment](#-deployment-guide)
+- [User Experience](#-user-experience--interface-design)
+- [Security](#-security-measures)
+- [Monitoring](#-system-monitoring)
+- [Roadmap](#-future-roadmap)
+- [Team](#-team)
 
 ## 📝 Introduction
 
@@ -178,7 +196,7 @@ def system_failsafe():
         return default_traffic_pattern()
 ```
 
-## 📈 Processing Capabilities
+## 📈 Performance & Capabilities
 
 | Metric | Performance |
 |--------|-------------|
@@ -189,7 +207,9 @@ def system_failsafe():
 | Concurrent Users | 10,000 |
 | Storage | 100TB |
 
-## 📅 Project Timeline
+## 📅 Project Timeline & Roadmap
+
+### Project Timeline
 
 | Phase | Duration | Status |
 |-------|----------|---------|
@@ -200,7 +220,17 @@ def system_failsafe():
 | Pilot Deployment | Q1 2024 | 🚀 In Progress |
 | Full Implementation | Q2 2024 | 📅 Scheduled |
 
-## 🔧 Deployment Guide
+### Future Roadmap
+
+| Feature | Priority | Timeline |
+|---------|----------|----------|
+| AI-powered predictive analytics | High | Q2 2024 |
+| Smart parking integration | Medium | Q3 2024 |
+| Public transport optimization | High | Q3 2024 |
+| Weather impact analysis | Medium | Q4 2024 |
+| Advanced pedestrian safety | High | Q4 2024 |
+
+## 🔧 Deployment & Development
 
 ### Prerequisites
 ```bash
@@ -230,83 +260,21 @@ cp config.example.yml config.yml
 docker-compose up -d
 ```
 
-## 🤝 Contributing
+### Contributing
 
-### Development Setup
+#### Development Setup
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit changes (`git commit -m 'Add AmazingFeature'`)
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-### Coding Standards
+#### Coding Standards
 - Follow PEP 8 for Python code
 - Use TypeScript for frontend development
 - Write unit tests for new features
 - Document all API endpoints
 - Keep commit messages clear and meaningful
-
-## 📊 System Monitoring
-
-### Health Metrics
-```mermaid
-graph TD
-    A[System Health] --> B[Performance]
-    A --> C[Reliability]
-    A --> D[Security]
-    B --> E[Response Time]
-    B --> F[Resource Usage]
-    C --> G[Uptime]
-    C --> H[Error Rate]
-    D --> I[Threats]
-    D --> J[Vulnerabilities]
-```
-
-### Alert Thresholds
-| Metric | Warning | Critical |
-|--------|---------|----------|
-| CPU Usage | >75% | >90% |
-| Memory | >80% | >95% |
-| Response Time | >200ms | >500ms |
-| Error Rate | >1% | >5% |
-| Queue Length | >50 | >100 |
-
-## 🔐 Security Measures
-
-### Authentication
-- JWT-based API authentication
-- Role-based access control
-- Multi-factor authentication for admin
-- Session management
-- API rate limiting
-
-### Data Protection
-- End-to-end encryption
-- Regular security audits
-- Automated vulnerability scanning
-- Data backup and recovery
-- GDPR compliance
-
-## 📱 Mobile App Features
-
-### User Interface
-```mermaid
-graph LR
-    A[Home] --> B[Live Traffic]
-    A --> C[Route Planning]
-    A --> D[Notifications]
-    B --> E[Map View]
-    C --> F[Navigation]
-    D --> G[Alerts]
-```
-
-### Key Functions
-- Real-time traffic updates
-- Smart route suggestions
-- Emergency notifications
-- Travel time estimation
-- Parking availability
-- Public transport integration
 
 ## 🎨 User Experience & Interface Design
 
@@ -432,18 +400,73 @@ Monospace: SF Mono
 - Responsive layouts
 - Dark mode support
 
-## 🌟 Future Roadmap
+## 🔐 Security & Monitoring
 
-### Planned Features
-| Feature | Priority | Timeline |
-|---------|----------|----------|
-| AI-powered predictive analytics | High | Q2 2024 |
-| Smart parking integration | Medium | Q3 2024 |
-| Public transport optimization | High | Q3 2024 |
-| Weather impact analysis | Medium | Q4 2024 |
-| Advanced pedestrian safety | High | Q4 2024 |
+### Security Measures
 
-## 👥 Team
+#### Authentication
+- JWT-based API authentication
+- Role-based access control
+- Multi-factor authentication for admin
+- Session management
+- API rate limiting
+
+#### Data Protection
+- End-to-end encryption
+- Regular security audits
+- Automated vulnerability scanning
+- Data backup and recovery
+- GDPR compliance
+
+### System Monitoring
+
+#### Health Metrics
+```mermaid
+graph TD
+    A[System Health] --> B[Performance]
+    A --> C[Reliability]
+    A --> D[Security]
+    B --> E[Response Time]
+    B --> F[Resource Usage]
+    C --> G[Uptime]
+    C --> H[Error Rate]
+    D --> I[Threats]
+    D --> J[Vulnerabilities]
+```
+
+#### Alert Thresholds
+| Metric | Warning | Critical |
+|--------|---------|----------|
+| CPU Usage | >75% | >90% |
+| Memory | >80% | >95% |
+| Response Time | >200ms | >500ms |
+| Error Rate | >1% | >5% |
+| Queue Length | >50 | >100 |
+
+## 📱 Mobile Application
+
+### User Interface
+```mermaid
+graph LR
+    A[Home] --> B[Live Traffic]
+    A --> C[Route Planning]
+    A --> D[Notifications]
+    B --> E[Map View]
+    C --> F[Navigation]
+    D --> G[Alerts]
+```
+
+### Key Functions
+- Real-time traffic updates
+- Smart route suggestions
+- Emergency notifications
+- Travel time estimation
+- Parking availability
+- Public transport integration
+
+## 👥 Team & Contact
+
+### Team Members
 
 | Role | Name | Contact |
 |------|------|---------|
@@ -452,7 +475,7 @@ Monospace: SF Mono
 | Developer | Divesh Anand | vtu21414@veltech.edu.in |
 | Developer | Kumar Jeevika | vtu23474@veltech.edu.in |
 
-## 🏛️ Institution
+### Institution
 
 <div align="center">
 
@@ -466,9 +489,7 @@ Avadi, Chennai 600062, Tamil Nadu, India
 
 <div align="center">
 
-[📑 Documentation](#) |
-[📱 Mobile App](#) |
-[🔧 Installation Guide](#) |
-[📄 License](#)
+© 2024 Smart Traffic Monitoring System - All Rights Reserved
 
 </div>
+````
