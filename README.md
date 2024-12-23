@@ -49,6 +49,103 @@ graph TD
 - ☁️ **Cloud**: AWS/Azure
 - 🔒 **Security**: SSL/TLS, OAuth2.0
 
+## 🔄 Logic & Implementation
+
+### Core Algorithm Flow
+```mermaid
+graph TD
+    A[Data Collection] -->|Sensor Input| B[Data Processing]
+    B -->|Clean Data| C[Traffic Analysis]
+    C -->|Current State| D[Decision Engine]
+    D -->|Optimal Solution| E[Signal Control]
+    E -->|Actions| F[Feedback Loop]
+    F -->|Performance Metrics| A
+```
+
+### Traffic Control Logic
+1. **Data Collection**
+   - Vehicle density measurement
+   - Speed detection
+   - Queue length estimation
+   - Emergency vehicle detection
+   - Pedestrian presence
+
+2. **Signal Timing Optimization**
+   ```python
+   def optimize_signal_timing(junction_data):
+       traffic_density = calculate_density(junction_data)
+       queue_length = estimate_queue_length(junction_data)
+       waiting_time = calculate_waiting_time(junction_data)
+       
+       if emergency_vehicle_detected():
+           return emergency_protocol()
+           
+       green_time = base_time + (
+           α * traffic_density +
+           β * queue_length +
+           γ * waiting_time
+       )
+       
+       return min(max(green_time, MIN_GREEN_TIME), MAX_GREEN_TIME)
+   ```
+
+3. **Priority Management**
+   ```python
+   def calculate_priority(vehicle_type, waiting_time, lane_congestion):
+       priority_score = {
+           'emergency': 100,
+           'public_transport': 80,
+           'heavy_vehicle': 60,
+           'car': 40,
+           'two_wheeler': 20
+       }
+       
+       final_score = (
+           priority_score[vehicle_type] * 0.4 +
+           waiting_time * 0.3 +
+           lane_congestion * 0.3
+       )
+       
+       return final_score
+   ```
+
+### Adaptive Control System
+```mermaid
+graph LR
+    A[Real-time Data] --> B{Condition Check}
+    B -->|Normal| C[Standard Protocol]
+    B -->|Emergency| D[Priority Protocol]
+    B -->|Peak Hours| E[Congestion Protocol]
+    C --> F[Execute Actions]
+    D --> F
+    E --> F
+    F --> G[Monitor & Adjust]
+```
+
+### Key Implementation Features
+
+| Component | Logic Implementation |
+|-----------|---------------------|
+| Vehicle Detection | YOLO v5 + Custom CNN |
+| Congestion Analysis | Density-based clustering |
+| Signal Optimization | Deep Q-Learning Network |
+| Emergency Handling | Rule-based priority system |
+| Queue Management | Computer vision + IoT sensors |
+
+### Error Handling & Failsafe
+```python
+def system_failsafe():
+    try:
+        monitor_system_health()
+        if system_error_detected():
+            activate_backup_system()
+            notify_administrators()
+            log_error_details()
+        return maintain_minimum_functionality()
+    except CriticalError:
+        return default_traffic_pattern()
+```
+
 ## 📈 Processing Capabilities
 
 | Metric | Performance |
