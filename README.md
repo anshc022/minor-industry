@@ -85,11 +85,62 @@ Implementation in Chennai has demonstrated:
 ### Hardware Stack
 ```mermaid
 graph TD
-    A[IoT Sensors ESP32] --> B[Processing Unit]
-    C[4K Cameras] --> B
-    B --> D[Cloud Infrastructure]
-    E[Network 5G/4G] --> D
+    subgraph Field_Layer[Field Layer]
+        A1[ESP32 Sensors] -.-> A2[4K Cameras]
+        A2 -.-> A3[Traffic Signals]
+        A3 -.-> A4[LED Displays]
+        style A1 fill:#f9f,stroke:#333
+        style A2 fill:#bbf,stroke:#333
+        style A3 fill:#bfb,stroke:#333
+        style A4 fill:#fbf,stroke:#333
+    end
+
+    subgraph Edge_Layer[Edge Computing Layer]
+        B1[NVIDIA Jetson] -.-> B2[Local Server]
+        B2 -.-> B3[5G Gateway]
+        style B1 fill:#ff9,stroke:#333
+        style B2 fill:#f9f,stroke:#333
+        style B3 fill:#9ff,stroke:#333
+    end
+
+    subgraph Cloud_Layer[Cloud Infrastructure]
+        C1[Load Balancer] -.-> C2[GPU Clusters]
+        C2 -.-> C3[Storage Array]
+        C3 -.-> C4[Backup System]
+        style C1 fill:#fbb,stroke:#333
+        style C2 fill:#bfb,stroke:#333
+        style C3 fill:#bbf,stroke:#333
+        style C4 fill:#fbf,stroke:#333
+    end
+
+    Field_Layer --> Edge_Layer
+    Edge_Layer --> Cloud_Layer
 ```
+
+### Hardware Specifications
+
+#### Field Devices
+| Component | Specifications | Quantity |
+|-----------|---------------|-----------|
+| 🎥 Cameras | • Resolution: 4K/60fps<br>• Night Vision: IR Sensors<br>• Wide Angle: 120°<br>• IP67 Rated | 4 per junction |
+| 📡 ESP32 | • CPU: Dual-Core 240MHz<br>• RAM: 520KB SRAM<br>• Storage: 4MB Flash<br>• WiFi + BLE 5.0 | 8 per junction |
+| 🚦 Smart Signals | • LED Matrix Display<br>• Power: Solar Backup<br>• IP65 Rated<br>• Emergency Override | 4 per junction |
+| 📺 LED Displays | • Size: 2m x 1m<br>• Brightness: 5000 nits<br>• IP65 Weather Proof<br>• 4G Connectivity | 2 per junction |
+
+#### Edge Computing
+| Component | Specifications | Purpose |
+|-----------|---------------|----------|
+| 🖥️ NVIDIA Jetson | • Xavier NX Module<br>• 384 CUDA Cores<br>• 48 Tensor Cores<br>• 8GB RAM | Real-time AI Processing |
+| 💽 Local Server | • Intel Xeon E-2288G<br>• 64GB ECC RAM<br>• 2TB NVMe SSD<br>• RAID 5 Array | Edge Data Processing |
+| 📡 5G Gateway | • mmWave Support<br>• 10Gbps Throughput<br>• Redundant Power<br>• Fail-safe Routing | Network Connectivity |
+
+#### Cloud Infrastructure
+| Component | Specifications | Scaling |
+|-----------|---------------|----------|
+| ⚖️ Load Balancer | • AWS ELB<br>• Auto-scaling<br>• Multi-AZ<br>• SSL Termination | 100K req/sec |
+| 🎮 GPU Clusters | • 8x NVIDIA A100<br>• 320GB GPU Memory<br>• NVLink Interconnect<br>• Docker Support | Auto-scaling |
+| 💾 Storage | • 100TB All-Flash<br>• 3000 IOPS/TB<br>• 99.999% Uptime<br>• Geo-redundant | Expandable |
+| 🔄 Backup | • Daily Snapshots<br>• 30-day Retention<br>• Air-gapped Copy<br>• Quick Recovery | Auto-archive |
 
 ### Software Stack
 - 🐧 **OS**: Ubuntu 20.04 LTS
@@ -492,4 +543,3 @@ Avadi, Chennai 600062, Tamil Nadu, India
 © 2024 Smart Traffic Monitoring System - All Rights Reserved
 
 </div>
-````
