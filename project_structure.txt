@@ -1,0 +1,23 @@
+/minor-industry/
+├── docs/
+│   ├── technical_specs.pdf
+│   ├── user_manual.pdf
+│   └── api_documentation.md
+├── src/
+│   ├── ai_models/
+│   │   ├── traffic_prediction.py
+│   │   └── vehicle_detection.py
+│   ├── iot/
+│   │   ├── sensor_control.cpp
+│   │   └── data_collection.py
+│   └── web/
+│       ├── dashboard/
+│       └── mobile_app/
+├── tests/
+│   ├── unit_tests/
+│   └── integration_tests/
+├── data/
+│   ├── training/
+│   └── validation/
+├── README.md
+└── requirements.txt
